@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Recommended meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <!-- PyScript JavaScript -->
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+     <!-- This script tag bootstraps PyScript -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+      <!-- GOOGLE FONT -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Skills Test</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="ProjBrand.jpg" width="50px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Reciept generator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sku.html">SKU Generator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container" style=" background-color: rgb(255, 204, 211, 0.6); padding: 15px; color:rgb(78, 40, 46); font-family: 'Saira', sans-serif">
+    <h1>Keychains and stickers</h1>
+
+    <label for="selection"><b>Please select what you would want to be produced</b></label><br>
+
+			<input type="checkbox" name="keychain" id="Cat" value=20>
+			<label>Cat keychain - Php 20.00</label><br>
+
+			<input type="checkbox" name="Keychain" id="Bird" value= 15>
+			<label>Bird keychain - Php 15.00</label><br>
+
+			<input type="checkbox" name="Keychain" id="Jellyfish" value=25>
+            <label>Jellyfish keychain - Php 25.00</label><br>
+            
+            <input type="checkbox" name="sticker" id="AnimalStickers" value=30>
+			<label>Animal sticker pack - Php 30.00</label><br>
+            <br>
+
+            <input type='button' class='btn btn-danger' py-click="create_order" value="Create order">
+            <br><br>
+    <h4>---Reciept---</h4>
+    <div class="container" id="output1">
+    </div>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
